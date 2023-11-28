@@ -1,0 +1,131 @@
+.main-view {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center;
+    background-color: #7ACD9E;
+    margin-top: 70px;
+    box-shadow: 0 4px 15px -2px gray;
+
+}
+.main-things {
+    display: grid;
+    place-items: center;
+}
+/* .bottle {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    right: 394px;
+    top: 381px;
+    box-shadow: 0 4px 15px -2px gray;
+}
+.bottle:hover{
+    z-index: 1;
+    background-color: #39694e;
+}
+.burbujas {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #548f6e;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+} */
+.relleno {
+}
+.main-logo {
+}
+.main-invento {
+    height: 100px;
+    width: 700px;
+    position: relative;
+}
+.invento-line1 {
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-left: 110px;
+}
+.invento-line2 {
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-right: 110px;
+}
+.invento-line3 {
+    width: 3px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 44%;
+    margin-left: 210px;
+}
+.invento-line4 {
+    width: 3px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 44%;
+    margin-right: 210px;
+}
+.invento-icon {
+    position: relative;
+    top:30%;
+    left: 233px;
+    width: 33%;
+}
+.laboratorios-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(0deg, #7ACD9E 0%, #7ACD9E 100%);
+}
+.laboratorios-btn:after,
+.laboratorios-btn::before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:3px;
+    width:0;
+    background: #ffffff;
+    transition:400ms ease all;
+}
+.laboratorios-btn::after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.laboratorios-btn:hover:after,
+.laboratorios-btn:hover::before{
+    width:100%;
+    transition:800ms ease all;
+}

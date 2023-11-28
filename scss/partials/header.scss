@@ -1,0 +1,145 @@
+.header {
+    width: 100%;
+    box-shadow: 0 4px 15px -2px gray;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background-color: #fff;
+}
+nav{
+    height: 100%;
+    padding: 10px;
+}
+.options {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100%;
+    place-items: center;
+}
+
+/* LEFT */
+.logo{
+    display: grid;
+    place-items: center;
+}
+.logo-img{
+    width: 50%;
+    height: 50%;
+}
+/* LEFT */
+
+/* MIDDLE */
+.main-btns {
+    width: 100%;
+    display: inline-flex;
+    justify-content: start;
+    transition: opacity 0.5s;
+}
+.main-btns a{
+    margin-left: 30px;
+}
+.dropdown-item{
+    margin: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+    padding: 5px !important;
+}
+
+/* MIDDLE */
+
+/* RIGHT */
+.login-btn-container{
+    display: grid;
+    place-content: center;
+}
+.login-btn{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #7ACD9E;
+    transition: all 0.5s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 4px 15px -2px gray;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+.login-btn p{
+    margin-bottom: 0;
+}
+.login-img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.login-btn a{
+    font-size: 14px !important;
+}
+.login-btn:hover{
+    background-color: #548f6e;
+    scale: 1.1;
+    transition: all 0.5s;
+    color: #fff;
+}
+/* RIGHT */
+
+/* GENERAL */
+.logo a,
+.main-btns a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    align-items: center;
+}
+.logo a:hover,
+.main-btns a:hover{
+    color: #7ACD9E;
+    transition: color 0.5s;
+}
+
+#btn0{
+    position: relative;
+    left: -100%;
+    animation: slide-in 2s forwards;
+}
+#btn1{
+    position: relative;
+    left: -100%;
+    animation: slide-in 1.5s forwards;
+}
+#btn2{
+    position: relative;
+    left: -100%;
+    animation: slide-in 1.2s forwards;
+}
+#btn3{
+    position: relative;
+    left: -100%;
+    animation: slide-in 0.8s forwards;
+}
+#btn4{
+    position: relative;
+    left: -100%;
+    animation: slide-in 0.7s forwards;
+
+}
+
+/* ANIMATION  */
+@keyframes slide-in {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0; /* Llega a su posición actual */
+    }
+}

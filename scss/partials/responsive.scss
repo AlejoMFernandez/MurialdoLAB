@@ -1,0 +1,115 @@
+@media (max-width: 768px){
+    // header
+    .options{
+        justify-items: end;
+    }
+    .logo-img {
+        width: 100%;
+        height: 100%;
+    }
+    .login-btn{
+        padding: 8px;
+    }
+    .login-btn p{
+       display: none;
+    }
+    .login-img{
+        margin: 0;
+        width: 15px;
+        height: 15px;
+    }
+    .main-btns{
+        flex-direction: column;
+        a{
+            margin: 0;
+            margin-block: 3px;
+            h2{
+                font-size: 10px !important;
+            }
+        }
+    }
+    .dropdown-item{
+        margin: 0 !important;
+        font-size: 8px !important;
+    }
+
+    // main
+    .main-view{
+        height: 250px;
+    }
+    .main-things{
+        width: 400px;
+    }
+    .main-logo a img{
+        width: 350px;
+        margin-top: 40px;
+    }
+    .main-invento{
+        width: 100%;
+    }
+    .invento-line1 {
+        width: 60px;
+        margin-left: 50px;
+    }
+    .invento-line2{
+        margin-right: 50px;
+        width: 60px;
+    }
+    .invento-line3 {
+        margin-left: 110px;
+    }
+    .invento-line4{
+        margin-right: 110px;
+    }
+    .invento-icon{
+        left: 125px;
+        a{
+            font-size: 15px;
+        }
+    }
+
+
+    // section 1
+    .explicacion-text{
+        margin-inline: 15px;
+    }
+    .top h1{
+        font-size: 20px;
+    }
+    .bot{
+        font-size: 15px;
+        margin-inline: 0;
+    }
+    .explicacion-text-btn {
+        font-size: 12px;
+    }
+
+    //section 2
+    .explicacion-text-nosotros{
+        padding-block: 70px;
+        margin-inline: 40px;
+    }
+    .sobre-text-btn{
+        font-size: 12px;
+    }
+    // section 3
+    .explicacion2 .explicacion-container .container-text .explicacion-text .top h1{
+        margin-bottom: 30px;
+    }
+    .bot{
+        flex-direction: column;
+        img{
+            width: 200px;
+        }
+    }
+
+    //footer
+    .carta{
+        gap: 0;
+        padding: 0;
+        margin-right: 40px;
+        a{
+            margin-inline: 10px;
+        }
+    }
+}

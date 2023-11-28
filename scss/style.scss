@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Montserrat:wght@100;200;300;500;700&family=Pixelify+Sans&family=Quicksand:wght@300&family=Source+Code+Pro:ital@1&display=swap');
+
+$tipografia: 'Montserrat', sans-serif;
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
+
+// index.html
+@import "partials/index/sector1.scss";
+@import "partials/index/sector2.scss";
+@import "partials/index/sector3.scss";
+
+// lab.html
+@import "partials/lab/lab.scss";
+
+// responsive
+@import "partials/responsive.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $tipografia;
+}
+

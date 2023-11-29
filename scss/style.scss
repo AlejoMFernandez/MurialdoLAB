@@ -13,9 +13,16 @@ $tipografia: 'Montserrat', sans-serif;
 
 // lab.html
 @import "partials/lab/lab.scss";
+@import "partials/lab/laboratorios.scss";
+@import "partials/lab/prelab.scss";
+
+// text
+@import "partials/text/privacidad.scss";
+@import "partials/text/terminos.scss";
 
 // responsive
-@import "partials/responsive.scss";
+@import "partials/responsive/responsive.scss";
+@import "partials/responsive/laboratorios_r.scss";
 
 
 *{

@@ -1,0 +1,36 @@
+@media (max-width: 768px){
+    .grilla-labs{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas: 
+        "lab1"
+        "lab2"
+        "lab3"
+        "lab4"
+        ;
+        margin-inline: 40px;
+        margin-top: 100px;
+        .laboratorio{
+            a{
+                h2{
+                    font-size: 20px;
+                }
+            }
+            .lab-type{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                background-color: #4d926d;
+                right: -32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}

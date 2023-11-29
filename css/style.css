@@ -669,10 +669,6 @@ nav {
   margin-bottom: 8px;
 }
 
-.accordion-item {
-  box-shadow: 10px 10px 0px 0px #4d926d;
-}
-
 .accordion {
   width: 90%;
 }
@@ -742,6 +738,316 @@ nav {
 .img-options:hover {
   scale: 1.1;
   transition: scale 0.3s;
+}
+
+.grilla-labs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  grid-template-areas: "lab1 lab1 lab1" "lab2 lab2 lab2" "lab3 lab3 lab3" "lab4 lab4 lab4";
+  gap: 20px;
+  margin-inline: 400px;
+  margin-top: 150px;
+}
+.grilla-labs #lab1 {
+  grid-area: lab1;
+}
+.grilla-labs #lab2 {
+  grid-area: lab2;
+}
+.grilla-labs #lab3 {
+  grid-area: lab3;
+}
+.grilla-labs #lab4 {
+  grid-area: lab4;
+}
+.grilla-labs .laboratorio {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 10px 10px 0px 0px #4d926d;
+  position: relative;
+  transition: scale 0.1s ease-in-out;
+}
+.grilla-labs .laboratorio:hover {
+  scale: 1.02;
+}
+.grilla-labs .laboratorio a {
+  text-decoration: none;
+  color: #fff;
+}
+.grilla-labs .laboratorio a h2 {
+  padding-right: 50px;
+  padding-left: 20px;
+  margin: 0;
+}
+.grilla-labs .laboratorio .lab-type {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #4d926d;
+  right: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grilla-labs .laboratorio .lab-type img {
+  width: 50px;
+  height: 50px;
+}
+
+.electroforesis {
+  margin-top: 110px;
+  margin-inline: 10%;
+}
+
+.electroforesis-container {
+  display: grid;
+  gap: 20px;
+}
+
+.electroforesis-title {
+  margin-top: 30px;
+  text-align: center;
+  color: #548f6e;
+}
+
+.electroforesis-title h2 {
+  font-weight: 600;
+  display: inline;
+  margin-right: 5px;
+}
+
+.electroforesis-title h3 {
+  font-weight: 400;
+  display: inline;
+  font-size: 28px;
+}
+
+.title-conocimientos {
+  text-align: center;
+  font-size: 18px;
+}
+
+.conocimientos-container {
+  display: flex;
+  justify-content: center;
+}
+
+.conocimientos-container a {
+  text-decoration: none;
+  transition: scale 0.5s;
+}
+
+.conocimientos-container a:hover {
+  scale: 1.05;
+  transition: scale 0.5s;
+}
+
+.conocimiento {
+  margin: 15px 5px;
+  background-color: #548f6e;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px -2px gray;
+}
+
+.observaciones-a {
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.observaciones {
+  margin: 0px 5px;
+  background-color: #548f6e;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px -2px gray;
+  transition: background-color 0.2s;
+}
+
+.final {
+  padding: 20px;
+  margin-inline: 15px;
+}
+
+.introduccion-title {
+  color: #548f6e !important;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+}
+
+.options-introduccion {
+  display: grid;
+  justify-items: start;
+}
+
+.botones-expansibles {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+.objetivos-body {
+  justify-items: start !important;
+}
+
+.option-introduccion {
+  display: flex;
+  margin: 10px;
+  font-size: 17px;
+  align-items: baseline;
+}
+
+.option-referencias {
+  display: flex;
+  margin: 10px;
+  font-size: 17px;
+  align-items: center;
+}
+
+.options-referencias {
+  margin-top: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.hide div {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.img-small {
+  width: 40px;
+  height: 40px;
+}
+
+.extra-flex {
+  display: flex;
+}
+
+.show {
+  display: block;
+}
+
+.show-2 {
+  display: block;
+}
+
+.rotate-down {
+  transform: rotate(90deg);
+  transition: transform 0.6s ease; /* Ajusta la duración y el efecto de la transición según tus preferencias */
+}
+
+.rotate-up {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-img-objetivos {
+  margin-right: 5px;
+  width: auto;
+  height: 15px;
+}
+
+.point-img-objetivos {
+  margin-right: 5px;
+  width: 8px;
+  height: auto;
+}
+
+.laboratorios {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-laboratorios {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #7ACD9E;
+  transition: all 0.5s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 4px 15px -2px gray;
+  letter-spacing: 2px;
+}
+
+.btn-laboratorios:hover {
+  background-color: #548f6e;
+  scale: 1.05;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.accordion-body {
+  display: grid;
+  justify-items: center;
+}
+
+.bot-container-options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#accordion-title-bibliografia {
+  color: #548f6e;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.privacidad-terminos {
+  margin-top: 150px;
+  margin-inline: 20%;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.part2 {
+  display: flex;
+}
+
+.left {
+  display: grid;
+  width: 100%;
+  align-items: center;
+}
+
+.right {
+  display: grid;
+  text-align: center;
+}
+
+.img {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bracket-text {
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -846,6 +1152,33 @@ nav {
   }
   .carta a {
     margin-inline: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .grilla-labs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 180px);
+    grid-template-areas: "lab1" "lab2" "lab3" "lab4";
+    margin-inline: 40px;
+    margin-top: 100px;
+  }
+  .grilla-labs .laboratorio a h2 {
+    font-size: 20px;
+  }
+  .grilla-labs .laboratorio .lab-type {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #4d926d;
+    right: -32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grilla-labs .laboratorio .lab-type img {
+    width: 35px;
+    height: 35px;
   }
 }
 * {

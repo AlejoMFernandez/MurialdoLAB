@@ -547,8 +547,32 @@ nav {
   grid-template-columns: 40% 40% 20%;
 }
 
+.laboratorio-container-1 {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 50% 30%;
+  justify-content: center;
+  justify-items: center;
+}
+
 .videos {
   display: flex;
+}
+
+.video0 {
+  width: 90%;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  margin: 10px 15px 10px 20px;
+}
+
+.video0-5 {
+  width: 90%;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  margin: 10px 15px 10px 20px;
 }
 
 .video1 {
@@ -565,6 +589,15 @@ nav {
 }
 
 .video-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.video-opciones-grid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,6 +668,14 @@ nav {
   margin: 10px;
 }
 
+.video-s {
+  width: 90%;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 70% 30%;
+  margin: 10px;
+}
+
 .style-video {
   width: 100%;
   height: 100%;
@@ -643,6 +684,13 @@ nav {
 .right {
   margin: 20px;
   margin-right: 40px;
+}
+
+.pregunta {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .option-introduccion {
@@ -742,9 +790,9 @@ nav {
 
 .grilla-labs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 250px);
-  grid-template-areas: "lab1 lab1 lab1" "lab2 lab2 lab2" "lab3 lab3 lab3" "lab4 lab4 lab4";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas: "lab1 lab1 lab3 lab4" "lab1 lab2 lab3 lab4";
   gap: 20px;
   margin-inline: 400px;
   margin-top: 150px;
@@ -1179,6 +1227,176 @@ nav {
   .grilla-labs .laboratorio .lab-type img {
     width: 35px;
     height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .electroforesis {
+    margin-top: 80px;
+    margin-inline: 10px;
+  }
+  .electroforesis .electroforesis-container {
+    justify-items: center;
+  }
+  .electroforesis .electroforesis-container .conocimientos .conocimientos-container {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .electroforesis .electroforesis-container .conocimientos .conocimientos-container a .conocimiento {
+    margin: 10px 5px;
+  }
+  .electroforesis .electroforesis-container .introduccion {
+    display: grid;
+    justify-items: center;
+  }
+  .img-propia {
+    width: 100%;
+  }
+  .btn-laboratorios {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .laboratorio .laboratorio-container {
+    grid-template-columns: none;
+  }
+  .laboratorio .laboratorio-container .video0-5 {
+    height: unset;
+  }
+  .laboratorio .laboratorio-container .video0-5 .video-opciones {
+    flex-wrap: nowrap;
+  }
+  .laboratorio .laboratorio-container .video0-5 .video-opciones button img {
+    width: 70px;
+  }
+  .laboratorio .laboratorio-container .video0-5 .video-opciones button h5 {
+    font-size: 15px;
+  }
+  .laboratorio .laboratorio-container .video0-5 .video-opciones button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .video-s {
+    margin-inline: 10px;
+    margin-block: 0;
+    width: 93%;
+    height: unset;
+  }
+  .laboratorio .laboratorio-container .video-s .video {
+    height: 220px;
+  }
+  .laboratorio .laboratorio-container .video1, .laboratorio .laboratorio-container .video2 {
+    grid-template-rows: 60% 40%;
+    margin-inline: 10px;
+    margin-block: 0;
+    width: 93%;
+    height: unset;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones .botones, .laboratorio .laboratorio-container .video2 .video-opciones .botones {
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones .botones .detener-btn, .laboratorio .laboratorio-container .video2 .video-opciones .botones .detener-btn {
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones .top, .laboratorio .laboratorio-container .video2 .video-opciones .top {
+    text-align: center;
+    align-items: flex-end;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones .bot, .laboratorio .laboratorio-container .video2 .video-opciones .bot {
+    display: flex;
+    flex-direction: row;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones, .laboratorio .laboratorio-container .video2 .video-opciones {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones button img, .laboratorio .laboratorio-container .video2 .video-opciones button img {
+    width: 70px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones button h5, .laboratorio .laboratorio-container .video2 .video-opciones button h5 {
+    font-size: 15px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones button h6, .laboratorio .laboratorio-container .video2 .video-opciones button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid, .laboratorio .laboratorio-container .video2 .video-opciones-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid .botones, .laboratorio .laboratorio-container .video2 .video-opciones-grid .botones {
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid .botones .detener-btn, .laboratorio .laboratorio-container .video2 .video-opciones-grid .botones .detener-btn {
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid button img, .laboratorio .laboratorio-container .video2 .video-opciones-grid button img {
+    width: 70px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid button h5, .laboratorio .laboratorio-container .video2 .video-opciones-grid button h5 {
+    font-size: 15px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-grid button h6, .laboratorio .laboratorio-container .video2 .video-opciones-grid button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .pregunta {
+    display: grid;
+    justify-items: center;
+  }
+  .laboratorio .laboratorio-container .pregunta .observaciones-container .hoja textarea {
+    height: 200px;
+  }
+  .img-options {
+    width: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .laboratorio .laboratorio-container, .laboratorio .laboratorio-container-1 {
+    grid-template-columns: none;
+    gap: 20px;
+  }
+  .laboratorio .laboratorio-container .video0, .laboratorio .laboratorio-container-1 .video0 {
+    grid-template-rows: 45% 55%;
+    margin-inline: 10px;
+    margin-block: 0;
+    width: 93%;
+    height: unset;
+  }
+  .laboratorio .laboratorio-container .video0 .video video, .laboratorio .laboratorio-container-1 .video0 .video video {
+    display: flex;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones-grid button img, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button img {
+    width: 70px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones-grid button h5, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button h5 {
+    font-size: 15px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones-grid button h6, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones, .laboratorio .laboratorio-container-1 .video0 .video-opciones {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones button img, .laboratorio .laboratorio-container-1 .video0 .video-opciones button img {
+    width: 70px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones button h5, .laboratorio .laboratorio-container-1 .video0 .video-opciones button h5 {
+    font-size: 15px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones button h6, .laboratorio .laboratorio-container-1 .video0 .video-opciones button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .pregunta, .laboratorio .laboratorio-container-1 .pregunta {
+    display: grid;
+    justify-items: center;
+  }
+  .laboratorio .laboratorio-container .pregunta .observaciones-container .hoja textarea, .laboratorio .laboratorio-container-1 .pregunta .observaciones-container .hoja textarea {
+    height: 200px;
+  }
+  .img-options {
+    width: 50px;
   }
 }
 * {

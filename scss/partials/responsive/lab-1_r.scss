@@ -1,0 +1,62 @@
+@media (max-width: 768px){
+    .laboratorio{
+        .laboratorio-container, .laboratorio-container-1{
+            grid-template-columns: none;
+            gap: 20px;
+            .video0{
+                grid-template-rows: 45% 55%;
+                margin-inline: 10px;
+                margin-block: 0;
+                width: 93%;
+                height: unset;
+                .video{
+                    video{
+                        display: flex;
+                    }
+                }
+                .video-opciones-grid{
+                    button{
+                        img{
+                            width: 70px;
+                        }
+                        h5{
+                            font-size: 15px;
+                        }
+                        h6{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .video-opciones{
+                    align-items: flex-start;
+                    padding-top: 20px;
+                    button{
+                        img{
+                            width: 70px;
+                        }
+                        h5{
+                            font-size: 15px;
+                        }
+                        h6{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .pregunta{
+                display: grid;
+                justify-items: center;
+                .observaciones-container{
+                    .hoja{
+                        textarea{
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .img-options{
+        width: 50px;
+    }
+}

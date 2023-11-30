@@ -1,0 +1,30 @@
+@media (max-width: 768px){
+    .electroforesis{
+        margin-top: 80px;
+        margin-inline: 10px;
+        .electroforesis-container{
+            justify-items: center;
+            .conocimientos{
+                .conocimientos-container{
+                    flex-wrap: wrap;
+                    align-items: center;
+                    a{
+                        .conocimiento{
+                            margin: 10px 5px;
+                        }
+                    }
+                }
+            }
+            .introduccion{
+                display: grid;
+                justify-items: center;
+            }
+        }
+    }
+    .img-propia{
+        width: 100%;
+    }
+    .btn-laboratorios{
+        margin-bottom: 50px;
+    }
+}

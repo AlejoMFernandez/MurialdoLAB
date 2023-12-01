@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Montserrat:wght@100;200;300;500;700&family=Pixelify+Sans&family=Quicksand:wght@300&family=Source+Code+Pro:ital@1&display=swap");
+@import url(../css/bootstrap.min.css);
 .header {
   width: 100%;
   box-shadow: 0 4px 15px -2px gray;
@@ -1118,7 +1119,9 @@ nav {
     height: 15px;
   }
   .main-btns {
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
   }
   .main-btns a {
     margin: 0;
@@ -1237,16 +1240,39 @@ nav {
   .electroforesis .electroforesis-container {
     justify-items: center;
   }
+  .electroforesis .electroforesis-container .electroforesis-title h2 {
+    font-size: 22px;
+  }
+  .electroforesis .electroforesis-container .electroforesis-title h3 {
+    font-size: 20px;
+  }
+  .electroforesis .electroforesis-container .conocimientos .title-conocimientos {
+    font-size: 16px;
+  }
   .electroforesis .electroforesis-container .conocimientos .conocimientos-container {
     flex-wrap: wrap;
     align-items: center;
   }
   .electroforesis .electroforesis-container .conocimientos .conocimientos-container a .conocimiento {
     margin: 10px 5px;
+    font-size: 10px;
   }
   .electroforesis .electroforesis-container .introduccion {
     display: grid;
     justify-items: center;
+  }
+  .electroforesis .electroforesis-container .introduccion .introduccion-title {
+    font-size: 22px;
+  }
+  .electroforesis .electroforesis-container .introduccion .accordion .accordion-item .accordion-button {
+    font-size: 12px;
+  }
+  .electroforesis .electroforesis-container .accordion .accordion-item .accordion-header .introduccion-title {
+    font-size: 12px;
+  }
+  .electroforesis .electroforesis-container .laboratorios .btn-laboratorios {
+    font-size: 12px;
+    padding: 12px;
   }
   .img-propia {
     width: 100%;
@@ -1291,7 +1317,7 @@ nav {
     height: unset;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones .botones, .laboratorio .laboratorio-container .video2 .video-opciones .botones {
-    margin: 0;
+    margin-inline: 10px;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones .botones .detener-btn, .laboratorio .laboratorio-container .video2 .video-opciones .botones .detener-btn {
     margin: 0;
@@ -1304,6 +1330,28 @@ nav {
     display: flex;
     flex-direction: row;
   }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .img-voltometro, .laboratorio .laboratorio-container .video2 .video-opciones-l .img-voltometro {
+    width: 100px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .video-opciones-2 .top, .laboratorio .laboratorio-container .video2 .video-opciones-l .video-opciones-2 .top {
+    margin-bottom: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .video-opciones-2 .top h6, .laboratorio .laboratorio-container .video2 .video-opciones-l .video-opciones-2 .top h6 {
+    font-size: 12px;
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .video-opciones-2 .top .detener-btn, .laboratorio .laboratorio-container .video2 .video-opciones-l .video-opciones-2 .top .detener-btn {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .video-opciones-2 .bot, .laboratorio .laboratorio-container .video2 .video-opciones-l .video-opciones-2 .bot {
+    flex-direction: row;
+    margin: 0;
+  }
+  .laboratorio .laboratorio-container .video1 .video-opciones-l .video-opciones-2 .bot .botones-volt .conocimiento, .laboratorio .laboratorio-container .video2 .video-opciones-l .video-opciones-2 .bot .botones-volt .conocimiento {
+    font-size: 10px;
+    margin-top: 10px;
+  }
   .laboratorio .laboratorio-container .video1 .video-opciones, .laboratorio .laboratorio-container .video2 .video-opciones {
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -1314,9 +1362,11 @@ nav {
   }
   .laboratorio .laboratorio-container .video1 .video-opciones button h5, .laboratorio .laboratorio-container .video2 .video-opciones button h5 {
     font-size: 15px;
+    color: black;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones button h6, .laboratorio .laboratorio-container .video2 .video-opciones button h6 {
     font-size: 12px;
+    color: black;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones-grid, .laboratorio .laboratorio-container .video2 .video-opciones-grid {
     display: grid;
@@ -1326,7 +1376,7 @@ nav {
     justify-content: center;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones-grid .botones, .laboratorio .laboratorio-container .video2 .video-opciones-grid .botones {
-    margin: 0;
+    margin-inline: 10px;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones-grid .botones .detener-btn, .laboratorio .laboratorio-container .video2 .video-opciones-grid .botones .detener-btn {
     margin: 0;
@@ -1336,9 +1386,11 @@ nav {
   }
   .laboratorio .laboratorio-container .video1 .video-opciones-grid button h5, .laboratorio .laboratorio-container .video2 .video-opciones-grid button h5 {
     font-size: 15px;
+    color: black;
   }
   .laboratorio .laboratorio-container .video1 .video-opciones-grid button h6, .laboratorio .laboratorio-container .video2 .video-opciones-grid button h6 {
     font-size: 12px;
+    color: black;
   }
   .laboratorio .laboratorio-container .pregunta {
     display: grid;
@@ -1346,6 +1398,9 @@ nav {
   }
   .laboratorio .laboratorio-container .pregunta .observaciones-container .hoja textarea {
     height: 200px;
+  }
+  .laboratorio .laboratorio-container .pregunta .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 12px;
   }
   .img-options {
     width: 50px;
@@ -1366,6 +1421,9 @@ nav {
   .laboratorio .laboratorio-container .video0 .video video, .laboratorio .laboratorio-container-1 .video0 .video video {
     display: flex;
   }
+  .laboratorio .laboratorio-container .video0 .video-opciones-grid .botones .detener-btn, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid .botones .detener-btn {
+    font-size: 12px !important;
+  }
   .laboratorio .laboratorio-container .video0 .video-opciones-grid button img, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button img {
     width: 70px;
   }
@@ -1373,6 +1431,9 @@ nav {
     font-size: 15px;
   }
   .laboratorio .laboratorio-container .video0 .video-opciones-grid button h6, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button h6 {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .video0 .video-opciones-grid button .detener-btn, .laboratorio .laboratorio-container-1 .video0 .video-opciones-grid button .detener-btn {
     font-size: 12px;
   }
   .laboratorio .laboratorio-container .video0 .video-opciones, .laboratorio .laboratorio-container-1 .video0 .video-opciones {
@@ -1384,9 +1445,11 @@ nav {
   }
   .laboratorio .laboratorio-container .video0 .video-opciones button h5, .laboratorio .laboratorio-container-1 .video0 .video-opciones button h5 {
     font-size: 15px;
+    color: black;
   }
   .laboratorio .laboratorio-container .video0 .video-opciones button h6, .laboratorio .laboratorio-container-1 .video0 .video-opciones button h6 {
     font-size: 12px;
+    color: black;
   }
   .laboratorio .laboratorio-container .pregunta, .laboratorio .laboratorio-container-1 .pregunta {
     display: grid;
@@ -1394,6 +1457,32 @@ nav {
   }
   .laboratorio .laboratorio-container .pregunta .observaciones-container .hoja textarea, .laboratorio .laboratorio-container-1 .pregunta .observaciones-container .hoja textarea {
     height: 200px;
+  }
+  .laboratorio .laboratorio-container .pregunta .accordion .accordion-item .accordion-header .accordion-button, .laboratorio .laboratorio-container-1 .pregunta .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 12px;
+  }
+  .laboratorio .laboratorio-container .pregunta .observaciones-container, .laboratorio .laboratorio-container-1 .pregunta .observaciones-container {
+    margin-top: 20px;
+  }
+  .laboratorio .laboratorio-container .pregunta .observaciones-container .title, .laboratorio .laboratorio-container-1 .pregunta .observaciones-container .title {
+    font-size: 14px;
+  }
+  .laboratorio .laboratorio-container .pregunta .observaciones-container .hoja textarea, .laboratorio .laboratorio-container-1 .pregunta .observaciones-container .hoja textarea {
+    font-size: 12px;
+  }
+  .options-videos {
+    display: grid;
+    padding-top: 20px;
+    justify-items: center;
+    justify-content: end;
+    padding-block: 0;
+  }
+  .options-videos .accordion {
+    width: 180% !important;
+    margin: 0 !important;
+  }
+  .options-videos .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 12px;
   }
   .img-options {
     width: 50px;

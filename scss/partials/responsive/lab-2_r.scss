@@ -35,9 +35,8 @@
                 width: 93%;
                 height: unset;
                 .video-opciones{
-
                     .botones{
-                        margin: 0;
+                        margin-inline: 10px;
                         .detener-btn{
                             margin: 0;
                         }
@@ -51,6 +50,34 @@
                         flex-direction: row;
                     }
                 }
+                .video-opciones-l{
+                    .img-voltometro{
+                        width: 100px;
+                    }
+                    .video-opciones-2{
+                        .top{
+                            margin-bottom: 0;
+                            h6{
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                            .detener-btn{
+                                font-size: 13px;
+                                padding: 5px 12px;
+                            }
+                        }
+                        .bot{
+                            flex-direction: row;
+                            margin: 0;
+                            .botones-volt{
+                                .conocimiento{
+                                    font-size: 10px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
                 .video-opciones{
                     align-items: flex-start;
                     flex-wrap: nowrap;
@@ -61,9 +88,11 @@
                         }
                         h5{
                             font-size: 15px;
+                            color: black;
                         }
                         h6{
                             font-size: 12px;
+                            color: black;   
                         }
                     }
                 }
@@ -74,7 +103,7 @@
                     justify-items: center;
                     justify-content: center;
                     .botones{
-                        margin: 0;
+                        margin-inline: 10px;
                         .detener-btn{
                             margin: 0;
                         }
@@ -85,9 +114,11 @@
                         }
                         h5{
                             font-size: 15px;
+                            color: black;
                         }
                         h6{
                             font-size: 12px;
+                            color: black;
                         }
                     }
                 }
@@ -99,6 +130,15 @@
                     .hoja{
                         textarea{
                             height: 200px;
+                        }
+                    }
+                }
+                .accordion{
+                    .accordion-item{
+                        .accordion-header{
+                            .accordion-button{
+                                font-size: 12px;
+                            }
                         }
                     }
                 }

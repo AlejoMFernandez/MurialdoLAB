@@ -15,6 +15,11 @@
                     }
                 }
                 .video-opciones-grid{
+                    .botones{
+                        .detener-btn{
+                            font-size: 12px !important;
+                        }
+                    }
                     button{
                         img{
                             width: 70px;
@@ -23,6 +28,9 @@
                             font-size: 15px;
                         }
                         h6{
+                            font-size: 12px;
+                        }
+                        .detener-btn{
                             font-size: 12px;
                         }
                     }
@@ -36,9 +44,11 @@
                         }
                         h5{
                             font-size: 15px;
+                            color: black;
                         }
                         h6{
                             font-size: 12px;
+                            color: black;
                         }
                     }
                 }
@@ -53,7 +63,48 @@
                         }
                     }
                 }
+                .accordion{
+                    .accordion-item{
+                        .accordion-header{
+                            .accordion-button{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .observaciones-container{
+                    margin-top: 20px;
+                    .title{
+                        font-size: 14px;
+                    }
+                    .hoja{
+                        textarea{
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
+        }
+    }
+    .options-videos{
+        display: grid;
+        padding-top: 20px;
+        justify-items: center;
+        justify-content: end;
+        padding-block:0 ;
+        .accordion{
+            width: 180% !important;
+            margin: 0 !important;
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .options-videos-container{
+
         }
     }
     .img-options{

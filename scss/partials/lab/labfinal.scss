@@ -1,0 +1,63 @@
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 15px;
+}
+.introduccion {
+}
+.test-evaluativo {
+    margin-top: -150px;
+}
+.test-evaluativo-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #548f6e;
+    padding: 15px 40px;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px -2px gray;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+.test-evaluativo-btn:hover, .observaciones:hover{
+    background-color: #457058;
+    transition: background-color 0.5s;
+}
+.adn-final-img{
+    transform: rotate(90deg);
+}
+.electroforesis-final {
+    margin-inline: 10%;
+}
+.electroforesis-container-final {
+}
+.electroforesis-title-final {
+    margin-top: 30px;
+    text-align: center;
+    color: #548f6e;
+}
+.adn-title{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.title-final{
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    justify-content: center;
+}
+.title-final h2{
+    margin-inline: 20px;
+    margin-bottom: 0 !important;
+    font-size: 40px !important;
+    text-align: center;
+    color: #66ad86;
+    font-weight: 800;
+}
+.preguntas-final{
+    display: flex;
+    margin: 10px;
+    font-size: 17px;
+    text-align: start;
+}

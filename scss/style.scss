@@ -17,10 +17,15 @@ $tipografia: 'Montserrat', sans-serif;
 @import "partials/lab/lab.scss";
 @import "partials/lab/laboratorios.scss";
 @import "partials/lab/prelab.scss";
+@import "partials/lab/labfinal.scss";
 
 // text
 @import "partials/text/privacidad.scss";
 @import "partials/text/terminos.scss";
+@import "partials/text/sobre-nosotros.scss";
+
+// login
+@import "partials/login/acceder.scss";
 
 // responsive
 @import "partials/responsive/responsive.scss";
@@ -28,6 +33,7 @@ $tipografia: 'Montserrat', sans-serif;
 @import "partials/responsive/prelab_r.scss";
 @import "partials/responsive/lab-2_r.scss";
 @import "partials/responsive/lab-1_r.scss";
+
 
 
 *{

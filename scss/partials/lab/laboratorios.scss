@@ -3,11 +3,11 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
     grid-template-areas: 
-    "lab1 lab1 lab3 lab4"
+    "lab1 lab2 lab3 lab4"
     "lab1 lab2 lab3 lab4"
     ;
-    gap: 20px;
-    margin-inline: 400px;
+    gap: 80px;
+    margin-inline: 5%;
     margin-top: 150px;
     #lab1{
         grid-area: lab1;
